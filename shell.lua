@@ -247,8 +247,6 @@ local runcount = 1
             menus = cfg["menus"]
         end
     end
-    loadMenu("main")
-end
 local function centerText(tY, tText)
     local offX = w/2 - (string.len(tText) +1)/2
     mon.setCursorPos(offX+1, tY)
