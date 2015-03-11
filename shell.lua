@@ -435,12 +435,12 @@ local function splash(monitor)
         w, h = mon.getSize()
         local data = {
                 "",
-                "Turtle",
+                "Glass",
                 "SHELL",
                 version,
                 betaMsg
             }
-        if w > 7 and h > 5 then
+        --[[if w > 7 and h > 5 then
             logo = --[[{ --legacy :(
                 '',
                 "##  ##  ######  ##  ##",
@@ -463,7 +463,7 @@ local function splash(monitor)
             for i=1, #data do
                 centerText(y+i, data[i])
             end
-        end
+        end]]
     end
 end
 
