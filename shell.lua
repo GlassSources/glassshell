@@ -441,7 +441,7 @@ local function splash(monitor)
                 betaMsg
             }
         if w > 7 and h > 5 then
-            logo = { --legacy :(
+            logo = --[[{ --legacy :(
                 '',
                 "##  ##  ######  ##  ##",
                 "##  ##  ##  ##  ##  ##",
@@ -450,7 +450,7 @@ local function splash(monitor)
                 "    ##  ######      ##",
                 " B R A N D    B I O S ",
                 " v"..version.." "..betaMsg
-            }]]
+            }]]--
             mon.setBackgroundColor(colors.white)
             mon.clear()
             drawPictureTable(mon, logo, w/2 - #logo[1]/2, h/2 - #logo/2, colours.white)
