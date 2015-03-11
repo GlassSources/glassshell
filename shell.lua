@@ -589,7 +589,7 @@ local function update(monitor, monID)
                 if string.len(footerStr) > w then
                     footerStr = "UP/DN/ENTER"
                 end
-                centerText(h, footerStr)
+                --centerText(h, footerStr)
             else
                 if tmpOffset[monID] == "init" then
                     tmpOffset[monID] = w
