@@ -247,11 +247,11 @@ local runcount = 1
             menus = cfg["menus"]
         end
     end
-local function centerText(tY, tText)
-    local offX = w/2 - (string.len(tText) +1)/2
-    mon.setCursorPos(offX+1, tY)
-    mon.write(tText)
-end
+--local function centerText(tY, tText)
+    --local offX = w/2 - (string.len(tText) +1)/2
+    --mon.setCursorPos(offX+1, tY)
+   -- mon.write(tText)
+--
 local function centerTextWidth(tY, tText, tX, tW)
     local offX = tW/2 - string.len(tText)/2 + tX
     mon.setCursorPos(offX+1, tY)
@@ -500,7 +500,7 @@ local function update(monitor, monID)
             -- Menu Header
             mon.setCursorPos(1,1)
             mon.write(string.rep(" ", w))
-            centerText(1, currentMenuName)
+            --centerText(1, currentMenuName)
             mon.setBackgroundColor(colorList[cMode].notifyBarBG)
             mon.setTextColor(colorList[cMode].notifyBarText)
             mon.setCursorPos(1,2)
