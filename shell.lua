@@ -3,7 +3,6 @@ local function announceTermMonitor(msgT, msgM, scale)
     term.setCursorPos(1,1)
     term.write(msgT)
     term.setCursorPos(1,3)
-    for i=1, #positions do
         if peripheral.getType(positions[i]) == "monitor" then
             local mon = peripheral.wrap(positions[i])
             if mon then
